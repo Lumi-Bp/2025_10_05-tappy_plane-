@@ -13,9 +13,10 @@ public class Obsticle : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Vector2 offset = new();
+        Vector3 offset = new();
         offset.x += Random.Range(-xOffset, xOffset);
         offset.y += Random.Range(-yOffset, yOffset);
+        transform.position += offset;
     }
 
     // Update is called once per frame
